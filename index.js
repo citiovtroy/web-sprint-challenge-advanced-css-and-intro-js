@@ -208,10 +208,15 @@ const artists = [
 (1) Name of the first artist (0th index) in the array
 (2) Bio of the third artist (2nd index) in the array */
 
-
+console.log(artists[0].name)
+console.log(artists[2].bio)
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
+objIndex = artists.findIndex((obj => obj.id == 1));
+artists[objIndex].name = "Vincent van Gogh";
+
+console.log(artists[objIndex].name)
 
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
@@ -223,19 +228,22 @@ const artists = [
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
 function getArtistByIndex(array, index) {
-    /* code here */
+    artist = artists[1].name;
   }
+  console.log(getArtistByIndex)
   
-  /**
+  // console.log(`The artist at index 1 is ${artists[1].name}`)
+  // console.log(`The artist at index 1 is ${artists[1].name}`)
 
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(/* Code here */){
+function get20s(arr){
 
   /* Code here */
 
 }
+console.log(arr)
 
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
@@ -267,11 +275,17 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/* Code here */){
-
-    /* Code here */
-
-  }
+var a = artists, b={
+  id: 20,
+name: 'Troy Murray', 
+years: '1988 - 2020',
+genre: 'Web Design', 
+nationality: 'Cuban/Panamainian',
+bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula fermentum pharetra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae' 
+};
+a.push(b);   
+  
+console.log(artists[20])
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
@@ -281,13 +295,13 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/* Code here */){
+function lotsOfArt(artists){
 
-  /* Code here */
+  return artists[0, 5, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 19];
 
 }
 
-
+console.log(lotsOfArt)
 
 // 🎨🎨 STRETCH 🎨🎨//
 
